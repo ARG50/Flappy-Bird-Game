@@ -20,6 +20,7 @@ public class FrameWindow extends JFrame {
         FlappyBird flappyBird = new FlappyBird();
         this.add(flappyBird);
         this.pack();
+        flappyBird.requestFocus();
 
         this.setVisible(true);
 
