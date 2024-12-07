@@ -12,7 +12,7 @@ public class FrameWindow extends JFrame {
 //        ImageIcon windowIcon =
 
         this.setTitle("Flappy Bird Game");
-        this.setPreferredSize(new Dimension(frameWidth, frameHeight));
+        this.setSize(new Dimension(frameWidth, frameHeight));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
