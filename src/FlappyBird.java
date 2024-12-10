@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class FlappyBird extends JPanel implements ActionListener, KeyListener {
+    private static FlappyBird flappyBird = new FlappyBird();
 
     private int frameWidth = 360;
     private int frameHeight = 640;
@@ -74,6 +75,9 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     // Checking score
     double score = 0;
 
+    // Exit game
+    boolean exitGame = true;
+
     // Making a list of pipes with random position
     ArrayList<Pipe> pipesArrayList; // list of holding top Pipes and bottom Pipes.
     Random random = new Random();  // for shifting pipes upwards with random values
@@ -85,7 +89,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         this.addKeyListener(this);
 
         // Load and converting ImageIcon to Image by getImage() method.
-        gameBackground= new ImageIcon(getClass().getResource("flappybirdbg.png")).getImage();
+        gameBackground = new ImageIcon(getClass().getResource("flappybirdbg.png")).getImage();
         flappyBirdImg = new ImageIcon(getClass().getResource("flappybird.png")).getImage();
         topPipeImg = new ImageIcon(getClass().getResource("toppipe.png")).getImage();
         bottomPipeImg = new ImageIcon(getClass().getResource("bottompipe.png")).getImage();
@@ -114,6 +118,8 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
             velocityY = -9;
         }
         else if(gameOver && e.getKeyCode() == KeyEvent.VK_SPACE){
+            exitGame = false;
+
             bird.y = birdY; // Resetting Bird's Y position
             velocityY = 0; // VelocityY reset
             pipesArrayList.clear(); // All pipes are reset
@@ -124,6 +130,14 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
             placePipesTimer.start();
 
         }
+        else if (gameOver && e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+
+            System.out.println("Exit to Desktop : "+gameOver);
+            GameManager.getInstance().stopGame();
+            System.exit(0);
+
+        }
+
     }
 
     @Override
@@ -196,7 +210,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         if(gameOver){
             g.setColor(new Color(189, 35, 35));
             g.drawString("Score: "+String.valueOf((int) score), 10, 35);
-            g.drawString("Game Over!", frameWidth/4, frameHeight/2);
+            g.drawString("  Game Over!", frameWidth/4, frameHeight/2);
 
 
             g.setFont(new Font("Cambria", Font.PLAIN, 26));
@@ -238,5 +252,10 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
             gameOver = true;
         }
     }
+
+    public boolean getGameStatus(){
+        return gameOver;
+    }
+
 
 }
