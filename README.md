@@ -36,18 +36,22 @@ After compiling, you can run the game by executing:
 
 ## How to Play
 
-- **Control the Bird:** Press the spacebar (or another key depending on your setup) to make the bird "flap" and rise.
+- **Control the Bird:** Press the up arrow to make the bird "flap" and rise.
 - **Avoid Pipes:** The pipes are moving from right to left. You need to avoid colliding with them by flapping the bird.
 - **Game Over:** The game ends when the bird collides with a pipe or falls to the ground.
+- **Restart Game:** The game will begin from start if user press Spacebar key while game is over.
+- **Exit Game:** The game will exit if user press Escape Key or 'Esc' while game is over.
 
 ## Game Controls
 
-- **Flap the Bird:** Press the **Spacebar** (or **Enter**) to make the bird flap and rise.
+- **Flap the Bird:** Press the **`Up Arrow Key`** to make the bird flap and rise.
+- **Restart:** Press **`Spacebar`** to restart the game again.
+- **Exit Game:** Press **`Esc`** to exit the game totally.
 
 ## Game Assets
 
 - **Images:** The game includes image assets for the background, bird, pipes, and other UI elements. These images should be located in the `resources` directory of the project.
-- **Sound Effects:** You can add sound effects such as bird flapping, pipe collisions, and background music (optional).
+- **Sound Effects:** There is no sound effects used such as bird flapping, pipe collisions, and background music in the game.
 
 Make sure you have the following image files in your `resources` folder:
 - `flappybirdbg.png` - Background image.
@@ -63,9 +67,15 @@ Ensure that the image files are located in the correct directory (`resources`) a
 - **Game Crashes:**
 If you see any crashes, check the console for error messages, which might provide insight into missing resources or other issues.
 
-## Contribution
+## Contribution & Acknowledgement
 
-Feel free to fork this project and contribute! You can submit pull requests with improvements, bug fixes, or feature additions.
+- This project was made possible with the help of these amazing resources below.
+- **ChatGPT** - Assisted with generating code snippets, debugging, and documentation.
+- Special thanks to these channels:
+### Java Frame Design Inspiration 
+- [BroCode](https://www.youtube.com/@BroCodez)
+### Java Game Design Inspiration
+- [KennyYipCoding](https://www.youtube.com/@KennyYipCoding)
 
 ### Reporting Issues
 
@@ -73,7 +83,7 @@ If you encounter any issues or bugs, please open an issue in the GitHub reposito
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
 
