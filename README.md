@@ -7,7 +7,7 @@ This is a simple Flappy Bird game built using **Java** and **Swing GUI**. The ga
 - **Flappy Bird Gameplay:** The bird can be controlled by pressing a key (or tapping the screen) to simulate a flapping motion that keeps the bird in the air.
 - **Pipes:** The game features moving pipes that appear at random heights and move from right to left across the screen.
 - **Collision Detection:** The bird collides with pipes or the ground, resulting in the end of the game.
-- **Background Music and Sound Effects:** (Optional) You can add background music and sound effects for flapping and collisions.
+- **Background Music and Sound Effects:** There is not added any background music and sound effects for flapping and collisions.
 
 ## Requirements
 
@@ -71,10 +71,13 @@ If you see any crashes, check the console for error messages, which might provid
 
 - This project was made possible with the help of these amazing resources below.
 - **ChatGPT** - Assisted with generating code snippets, debugging, and documentation.
+### Assisted with generating code snippets, debugging, and documentation. 
+- [ChatGPT](https://openai.com/chatgpt)
+  
 - Special thanks to these channels:
 ### Java Frame Design Inspiration 
 - [BroCode](https://www.youtube.com/@BroCodez)
-### Java Game Design Inspiration
+### Java Game Design Inspiration &
 - [KennyYipCoding](https://www.youtube.com/@KennyYipCoding)
 
 ### Reporting Issues
@@ -106,14 +109,3 @@ Here you can add a few screenshots of the game in action.
 
 Happy coding, and enjoy the game!
 
-
-Key Section:
-
-1. Project Overview: Describes the Flappy Bird game, its mechanics, and what technologies are used.
-2. Requirements: Lists the software needed to run the game.
-3. Setup and Installation: Provides step-by-step instructions to get the game up and running.
-4. How to Play: Explains the gameplay mechanics and controls.
-5. Game Assets: Mentions the necessary image and sound assets for the game.
-6. Troubleshooting: Offers solutions to common problems that users might face.
-7. Contributions: Encourages other developers to contribute to the project.
-8. License: Includes licensing information (here, it's set to MIT for open-source).
