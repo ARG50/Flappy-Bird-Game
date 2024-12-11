@@ -96,7 +96,7 @@ Here you can add a few screenshots of the game in action.
 
 **Example:**
 
-![Flappy Bird Game Screenshot](screenshots/flappybird_screenshot.png)
+![Flappy Bird Game Screenshot](Game Screenshots/Screenshot 2024-12-11 204751.png)
 
 ---
 
