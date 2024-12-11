@@ -17,21 +17,21 @@ This is a simple Flappy Bird game built using **Java** and **Swing GUI**. The ga
 ## Setup and Installation
 
 1. **Clone the repository:**
- `git clone https://github.com/ARG50/Flappy-Bird-Game.git`
+ ```git clone https://github.com/ARG50/Flappy-Bird-Game.git```
 
 
 2. **Navigate to the project folder:**
-`cd flappybird-java`
+```cd flappybird-java```
 
 
 3. **Compile the Java files:**
 If you're using a command line, you can compile the Java files with:
-`javac FlappyBird.java`
+```javac FlappyBird.java```
 
 
 4. **Run the game:**
 After compiling, you can run the game by executing:
-`java FlappyBird`
+```java FlappyBird```
 
 
 ## How to Play
@@ -108,4 +108,3 @@ Here you can add a few screenshots of the game in action.
 ---
 
 Happy coding, and enjoy the game!
-
